@@ -1,0 +1,12 @@
+{
+  "name": "@eeoy/eslint-config",
+  "main": "index.js",
+  "version": "0.0.0",
+  "devDependencies": {},
+  "peerDependencies": {
+    "eslint-plugin-import": "^2.19.1"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.9"
+  }
+}

@@ -142,7 +142,7 @@ module.exports = {
         ],
 
         'no-unused-expressions': 'off',
-        '@typescript-eslint/no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expressions': 'error',
 
         '@typescript-eslint/unbound-method': [
           'error',

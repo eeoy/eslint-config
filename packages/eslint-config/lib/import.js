@@ -48,7 +48,7 @@ module.exports = {
         groups: ['builtin', 'external', 'internal'],
       },
     ],
-    'import/newline-after-import': 'error',
+    // 'import/newline-after-import': 'error',
     'import/no-unassigned-import': 'error',
     'import/no-named-default': 'error',
     'import/no-anonymous-default-export': [

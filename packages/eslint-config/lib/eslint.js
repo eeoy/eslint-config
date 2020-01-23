@@ -212,7 +212,19 @@ module.exports = {
     'no-underscore-dangle': 'error',
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
     'one-var': ['error', 'never'],
-    // 'padding-line-between-statements': 'off',
+    'padding-line-between-statements': [
+      'warn',
+      {
+        blankLine: 'always',
+        prev: ['import', 'cjs-import'],
+        next: ['*'],
+      },
+      {
+        blankLine: 'any',
+        prev: ['import', 'cjs-import'],
+        next: ['import', 'cjs-import'],
+      },
+    ],
     'prefer-object-spread': 'error',
     'spaced-comment': [
       'error',

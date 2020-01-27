@@ -239,7 +239,7 @@ module.exports = {
         },
       },
     ],
-    quotes: ['error', 'single', { avoidEscape: true }],
+    quotes: ['warn', 'single', { avoidEscape: true }],
 
     /* variable */
 

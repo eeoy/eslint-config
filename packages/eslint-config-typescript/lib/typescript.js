@@ -89,7 +89,7 @@ module.exports = {
         'no-constant-condition': 'off',
         '@typescript-eslint/no-unnecessary-condition': [
           'error',
-          { ignoreRhs: true },
+          { ignoreRhs: true, checkArrayPredicates: true },
         ],
 
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
@@ -98,7 +98,7 @@ module.exports = {
 
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': [
-          'error',
+          'warn',
           { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
         ],
 
@@ -150,6 +150,12 @@ module.exports = {
 
         '@typescript-eslint/unified-signatures': 'error',
 
+        // TODO: enable?
+        '@typescript-eslint/naming-convention': 'off',
+
+        '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
+        '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
+        '@typescript-eslint/switch-exhaustiveness-check': 'error',
         // Checked by Typescript - ts(2378)
         'getter-return': 'off',
         // Checked by Typescript - ts(2300)

@@ -1,0 +1,15 @@
+{
+  "name": "@eeoy/eslint-config-jest",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint-plugin-jest": "^23.6.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-jest": "^23.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

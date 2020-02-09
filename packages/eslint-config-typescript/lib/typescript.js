@@ -62,10 +62,6 @@ module.exports = {
 
         // TODO: more detailed
         '@typescript-eslint/member-ordering': 'error',
-        'no-array-constructor': 'off',
-        '@typescript-eslint/no-array-constructor': 'error',
-        'no-empty-function': 'off',
-        '@typescript-eslint/no-empty-function': 'warn',
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/no-explicit-any': [
           'warn',
@@ -96,20 +92,6 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
 
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': [
-          'warn',
-          { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
-        ],
-
-        'no-use-before-define': 'off',
-        '@typescript-eslint/no-use-before-define': [
-          'error',
-          {
-            functions: false,
-            typedefs: false,
-          },
-        ],
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/prefer-for-of': 'error',
 
@@ -128,18 +110,12 @@ module.exports = {
         '@typescript-eslint/prefer-regexp-exec': 'error',
         '@typescript-eslint/prefer-string-starts-ends-with': 'error',
 
-        'require-await': 'off',
-        '@typescript-eslint/require-await': 'error',
-
         '@typescript-eslint/restrict-template-expressions': [
           'error',
           {
             allowNumber: true,
           },
         ],
-
-        'no-unused-expressions': 'off',
-        '@typescript-eslint/no-unused-expressions': 'error',
 
         '@typescript-eslint/unbound-method': [
           'error',
@@ -156,27 +132,59 @@ module.exports = {
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
-        // Checked by Typescript - ts(2378)
+
+        'default-param-last': 'off',
+        '@typescript-eslint/default-param-last': 'error',
+
+        'no-array-constructor': 'off',
+        '@typescript-eslint/no-array-constructor': 'error',
+
+        // TODO: enable?
+        // 'no-dupe-class-members': 'off',
+        // '@typescript-eslint/no-dupe-class-members': 'off',
+
+        'no-empty-function': 'off',
+        '@typescript-eslint/no-empty-function': 'warn',
+
+        'no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expressions': 'error',
+
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': [
+          'warn',
+          { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
+        ],
+
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': [
+          'error',
+          {
+            functions: false,
+            typedefs: false,
+          },
+        ],
+
+        'no-useless-constructor': 'off',
+        '@typescript-eslint/no-useless-constructor': 'error',
+
+        'require-await': 'off',
+        '@typescript-eslint/require-await': 'error',
+
+        'return-await': 'off',
+        '@typescript-eslint/return-await': 'error',
+
+        // rules checked by tsc
         'getter-return': 'off',
-        // Checked by Typescript - ts(2300)
         'no-dupe-args': 'off',
-        // Checked by Typescript - ts(1117)
         'no-dupe-keys': 'off',
-        // Checked by Typescript - ts(7027)
         'no-unreachable': 'off',
-        // Checked by Typescript - ts(2367)
         'valid-typeof': 'off',
-        // Checked by Typescript - ts(2588)
         'no-const-assign': 'off',
-        // Checked by Typescript - ts(2588)
         'no-new-symbol': 'off',
-        // Checked by Typescript - ts(2376)
         'no-this-before-super': 'off',
-        // This is checked by Typescript using the option `strictNullChecks`.
+        // enable option `strictNullChecks`.
         'no-undef': 'off',
-        // This is already checked by Typescript.
         'no-dupe-class-members': 'off',
-        // This is already checked by Typescript.
         'no-redeclare': 'off',
       },
     },

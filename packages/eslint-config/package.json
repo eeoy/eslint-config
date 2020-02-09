@@ -1,7 +1,7 @@
 {
   "name": "@eeoy/eslint-config",
   "main": "index.js",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "peerDependencies": {
     "eslint-plugin-import": "^2.19.1"
   },

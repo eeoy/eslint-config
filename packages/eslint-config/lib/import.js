@@ -65,5 +65,6 @@ module.exports = {
     ],
     // TODO
     'import/dynamic-import-chunkname': 'off',
+    'import/prefer-default-export': 'warn',
   },
 };

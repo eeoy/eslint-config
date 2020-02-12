@@ -65,7 +65,7 @@ module.exports = {
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/no-explicit-any': [
           'warn',
-          { fixToUnknown: true, ignoreRestArgs: false },
+          { fixToUnknown: false, ignoreRestArgs: false },
         ],
         '@typescript-eslint/no-extra-non-null-assertion': 'error',
         '@typescript-eslint/no-for-in-array': 'error',

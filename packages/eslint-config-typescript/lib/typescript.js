@@ -17,11 +17,14 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint', 'import'],
       rules: {
-        'import/no-unresolved': 'off',
-        'import/named': 'off',
         'import/default': 'off',
-        'import/no-cycle': 'off',
         'import/extensions': [0, { ts: 'never', tsx: 'never' }],
+        'import/named': 'off',
+        'import/namespace': 'off',
+        'import/no-cycle': 'off',
+        'import/no-unresolved': 'off',
+        'import/no-unused-modules': 'off',
+        'import/no-deprecated': 'off',
 
         // typescript
         '@typescript-eslint/adjacent-overload-signatures': 'error',

@@ -39,16 +39,6 @@ module.exports = {
           },
         ],
 
-        camelcase: 'off',
-        '@typescript-eslint/camelcase': [
-          'warn',
-          { properties: 'always', ignoreDestructuring: false },
-        ],
-
-        '@typescript-eslint/class-name-casing': [
-          'error',
-          { allowUnderscorePrefix: true },
-        ],
         '@typescript-eslint/consistent-type-assertions': [
           'error',
           {
@@ -129,8 +119,43 @@ module.exports = {
 
         '@typescript-eslint/unified-signatures': 'error',
 
-        // TODO: enable?
-        '@typescript-eslint/naming-convention': 'off',
+        // TODO: more?
+        camelcase: 'off',
+        '@typescript-eslint/naming-convention': [
+          'error',
+          {
+            selector: 'default',
+            format: ['strictCamelCase'],
+          },
+          {
+            selector: 'variable',
+            format: ['camelCase', 'UPPER_CASE'],
+          },
+          {
+            selector: 'function',
+            format: ['strictCamelCase', 'StrictPascalCase'],
+            leadingUnderscore: 'allow',
+          },
+          {
+            selector: 'parameter',
+            format: ['strictCamelCase'],
+            leadingUnderscore: 'allow',
+          },
+          {
+            selector: 'property',
+            format: ['strictCamelCase'],
+            leadingUnderscore: 'allow',
+          },
+          {
+            selector: 'property',
+            format: null,
+            filter: '^__[^_]',
+          },
+          {
+            selector: 'typeLike',
+            format: ['StrictPascalCase'],
+          },
+        ],
 
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',

@@ -1,0 +1,18 @@
+{
+  "name": "@eeoy/eslint-config-react",
+  "version": "0.0.0",
+  "description": "eslint-config-react",
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.3.0"
+  }
+}

@@ -6,6 +6,7 @@ module.exports = {
       env: { 'jest/globals': true },
       rules: {
         'jest/expect-expect': 'error',
+        'jest/no-alias-methods': 'warn',
         'jest/no-commented-out-tests': 'error',
         'jest/no-disabled-tests': 'error',
         'jest/no-duplicate-hooks': 'error',

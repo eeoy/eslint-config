@@ -247,7 +247,7 @@ module.exports = {
     'no-shadow': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'error',
-    'no-unused-vars': ['error', { vars: 'all', args: 'after-used' }],
+    'no-unused-vars': ['warn', { vars: 'all', args: 'after-used' }],
     'no-use-before-define': [
       'error',
       { functions: false, classes: true, variables: true },

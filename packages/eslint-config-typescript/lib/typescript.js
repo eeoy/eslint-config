@@ -122,38 +122,21 @@ module.exports = {
         // TODO: more?
         camelcase: 'off',
         '@typescript-eslint/naming-convention': [
-          'error',
+          'warn',
           {
             selector: 'default',
-            format: ['strictCamelCase'],
-          },
-          {
-            selector: 'variable',
-            format: ['camelCase', 'UPPER_CASE'],
-          },
-          {
-            selector: 'function',
-            format: ['strictCamelCase', 'StrictPascalCase'],
+            format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
             leadingUnderscore: 'allow',
           },
           {
-            selector: 'parameter',
-            format: ['strictCamelCase'],
+            selector: 'class',
+            format: ['PascalCase'],
             leadingUnderscore: 'allow',
-          },
-          {
-            selector: 'property',
-            format: ['strictCamelCase'],
-            leadingUnderscore: 'allow',
-          },
-          {
-            selector: 'property',
-            format: null,
-            filter: '^__[^_]',
           },
           {
             selector: 'typeLike',
-            format: ['StrictPascalCase'],
+            format: ['PascalCase'],
+            leadingUnderscore: 'forbid',
           },
         ],
 

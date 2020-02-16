@@ -209,7 +209,7 @@ module.exports = {
           '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       },
     ],
-    'no-underscore-dangle': 'error',
+    'no-underscore-dangle': 'off',
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
     'one-var': ['error', 'never'],
     'padding-line-between-statements': [

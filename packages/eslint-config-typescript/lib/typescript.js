@@ -150,9 +150,8 @@ module.exports = {
         'no-array-constructor': 'off',
         '@typescript-eslint/no-array-constructor': 'error',
 
-        // TODO: enable?
-        // 'no-dupe-class-members': 'off',
-        // '@typescript-eslint/no-dupe-class-members': 'off',
+        'no-dupe-class-members': 'off',
+        '@typescript-eslint/no-dupe-class-members': 'error',
 
         'no-empty-function': 'off',
         '@typescript-eslint/no-empty-function': 'warn',
@@ -195,7 +194,6 @@ module.exports = {
         'no-this-before-super': 'off',
         // enable option `strictNullChecks`.
         'no-undef': 'off',
-        'no-dupe-class-members': 'off',
         'no-redeclare': 'off',
       },
     },

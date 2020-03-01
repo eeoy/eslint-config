@@ -25,7 +25,7 @@ module.exports = {
         'import/no-unresolved': 'off',
         'import/no-unused-modules': 'off',
         'import/no-deprecated': 'off',
-
+        'import/export': 'off',
         // typescript
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': 'off',

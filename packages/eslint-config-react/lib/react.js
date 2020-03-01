@@ -11,6 +11,31 @@ module.exports = {
     },
   },
   rules: {
+    // ignore lifecycle
+    'class-methods-use-this': [
+      'error',
+      {
+        exceptMethods: [
+          'render',
+          'getInitialState',
+          'getDefaultProps',
+          'getChildContext',
+          'componentWillMount',
+          'UNSAFE_componentWillMount',
+          'componentDidMount',
+          'componentWillReceiveProps',
+          'UNSAFE_componentWillReceiveProps',
+          'shouldComponentUpdate',
+          'componentWillUpdate',
+          'UNSAFE_componentWillUpdate',
+          'componentDidUpdate',
+          'componentWillUnmount',
+          'componentDidCatch',
+          'getSnapshotBeforeUpdate',
+        ],
+      },
+    ],
+
     'react/button-has-type': 'error',
     'react/destructuring-assignment': 'off',
     'react/display-name': 'off',
@@ -43,6 +68,7 @@ module.exports = {
     'react/no-unused-state': 'warn',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': ['error', 'always'],
+
     // for flow
     'react/prefer-read-only-props': 'off',
     'react/prefer-stateless-function': [
@@ -51,7 +77,8 @@ module.exports = {
     ],
     'react/require-optimization': 'off',
     'react/require-render-return': 'error',
-    'react/self-closing-comp': 'off',
+    'react/self-closing-comp': 'warn',
+
     // TODO: enable?
     'react/sort-comp': 'off',
     'react/state-in-constructor': 'off',

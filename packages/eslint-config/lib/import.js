@@ -1,3 +1,5 @@
+const EXT_GLOB = '{js,jsx,ts,tsx}';
+
 module.exports = {
   settings: {
     'import/extensions': ['.js', '.jsx'],
@@ -29,7 +31,22 @@ module.exports = {
     ],
     'import/export': 'error',
     'import/no-named-as-default': 'error',
-    'import/no-extraneous-dependencies': 'error',
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          'tests/**',
+          '**/__tests__/**',
+          '**/__mocks__/**',
+          `**/*.test.${EXT_GLOB}`,
+          `**/*.stories.${EXT_GLOB}`,
+          '**/.storybook/**',
+          '**/jest.config.js',
+          '**/webpack.config.js',
+        ],
+        optionalDependencies: false,
+      },
+    ],
     'import/no-mutable-exports': 'error',
     'import/first': 'error',
     'import/no-duplicates': 'error',
@@ -48,7 +65,7 @@ module.exports = {
         groups: ['builtin', 'external', 'internal'],
       },
     ],
-    // 'import/newline-after-import': 'error',
+    'import/newline-after-import': 'off',
     'import/no-unassigned-import': 'error',
     'import/no-named-default': 'error',
     'import/no-anonymous-default-export': [

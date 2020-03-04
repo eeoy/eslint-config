@@ -91,6 +91,7 @@ module.exports = {
         // TODO: enable?
         '@typescript-eslint/prefer-includes': 'off',
 
+        // not smart..
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
 
         '@typescript-eslint/prefer-optional-chain': 'warn',
@@ -195,6 +196,9 @@ module.exports = {
         // enable option `strictNullChecks`.
         'no-undef': 'off',
         'no-redeclare': 'off',
+
+        '@typescript-eslint/restrict-plus-operands': 'error',
+        '@typescript-eslint/no-base-to-string': 'error',
       },
     },
   ],

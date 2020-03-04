@@ -91,7 +91,7 @@ module.exports = {
         // TODO: enable?
         '@typescript-eslint/prefer-includes': 'off',
 
-        '@typescript-eslint/prefer-nullish-coalescing': 'warn',
+        '@typescript-eslint/prefer-nullish-coalescing': 'off',
 
         '@typescript-eslint/prefer-optional-chain': 'warn',
 

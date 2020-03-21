@@ -121,9 +121,9 @@ module.exports = {
         '@typescript-eslint/unified-signatures': 'error',
 
         // TODO: more?
-        camelcase: 'off',
+        camelcase: 'warn',
         '@typescript-eslint/naming-convention': [
-          'warn',
+          'off',
           {
             selector: 'default',
             format: ['camelCase', 'PascalCase', 'UPPER_CASE'],

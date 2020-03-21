@@ -199,6 +199,10 @@ module.exports = {
 
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/no-base-to-string': 'error',
+
+        '@typescript-eslint/no-unsafe-call': 'error',
+        '@typescript-eslint/no-unsafe-member-access': 'error',
+        '@typescript-eslint/no-unsafe-return': 'error',
       },
     },
   ],

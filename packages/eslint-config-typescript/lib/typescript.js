@@ -193,6 +193,7 @@ module.exports = {
         'no-const-assign': 'off',
         'no-new-symbol': 'off',
         'no-this-before-super': 'off',
+
         // enable option `strictNullChecks`.
         'no-undef': 'off',
         'no-redeclare': 'off',
@@ -203,6 +204,11 @@ module.exports = {
         '@typescript-eslint/no-unsafe-call': 'error',
         '@typescript-eslint/no-unsafe-member-access': 'error',
         '@typescript-eslint/no-unsafe-return': 'error',
+        '@typescript-eslint/method-signature-style': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'error',
+
+        'dot-notation': 'off',
+        '@typescript-eslint/dot-notation': 'error',
       },
     },
   ],

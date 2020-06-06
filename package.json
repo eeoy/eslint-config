@@ -12,8 +12,8 @@
   },
   "devDependencies": {
     "eslint": "^7.2.0",
-    "lerna": "^3.20.2",
-    "prettier": "^1.19.1",
-    "typescript": "^3.7.4"
+    "lerna": "^3.22.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.5"
   }
 }

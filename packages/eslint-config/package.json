@@ -3,7 +3,7 @@
   "main": "index.js",
   "version": "0.8.0",
   "devDependencies": {
-    "eslint-plugin-import": "^2.19.1"
+    "eslint-plugin-import": "^2.20.2"
   },
   "peerDependencies": {
     "eslint-plugin-import": "^2.19.1"

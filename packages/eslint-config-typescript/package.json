@@ -1,9 +1,8 @@
 {
   "name": "@eeoy/eslint-config-typescript",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0"

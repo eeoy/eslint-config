@@ -10,7 +10,6 @@ module.exports = {
         'jest/no-commented-out-tests': 'error',
         'jest/no-disabled-tests': 'error',
         'jest/no-duplicate-hooks': 'error',
-        'jest/no-expect-resolves': 'error',
         'jest/no-export': 'error',
         'jest/no-focused-tests': 'error',
         'jest/no-identical-title': 'error',
@@ -20,15 +19,25 @@ module.exports = {
 
         // TODO: enable?
         'jest/no-large-snapshots': ['off', { maxSize: 12 }],
+
         // TODO: enable?
         'jest/no-mocks-import': 'off',
+
+        'jest/no-restricted-matchers': [
+          'error',
+          {
+            resolves: 'Use `expect(await promise)` instead.',
+            // toThrowErrorMatchingSnapshot:
+            //   'Use `toThrowErrorMatchingInlineSnapshot()` instead',
+            // toMatchSnapshot: 'Use `toMatchInlineSnapshot()` instead',
+          },
+        ],
+
         'jest/no-standalone-expect': 'error',
         'jest/no-test-callback': 'error',
         'jest/no-test-prefixes': 'error',
         'jest/no-test-return-statement': 'error',
         'jest/prefer-hooks-on-top': 'error',
-        // TODO: enable?
-        'jest/prefer-inline-snapshots': 'off',
         'jest/prefer-spy-on': 'error',
         'jest/prefer-to-be-null': 'error',
         'jest/prefer-to-be-undefined': 'error',

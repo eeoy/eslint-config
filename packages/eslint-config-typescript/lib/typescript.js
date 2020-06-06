@@ -77,10 +77,7 @@ module.exports = {
         '@typescript-eslint/no-throw-literal': 'error',
 
         'no-constant-condition': 'off',
-        '@typescript-eslint/no-unnecessary-condition': [
-          'error',
-          { ignoreRhs: true, checkArrayPredicates: true },
-        ],
+        '@typescript-eslint/no-unnecessary-condition': ['error'],
 
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
@@ -92,7 +89,6 @@ module.exports = {
         // TODO: enable?
         '@typescript-eslint/prefer-includes': 'off',
 
-        // not smart..
         '@typescript-eslint/prefer-nullish-coalescing': 'off',
 
         '@typescript-eslint/prefer-optional-chain': 'warn',
@@ -184,20 +180,6 @@ module.exports = {
 
         'return-await': 'off',
         '@typescript-eslint/return-await': 'error',
-
-        // rules checked by tsc
-        'getter-return': 'off',
-        'no-dupe-args': 'off',
-        'no-dupe-keys': 'off',
-        'no-unreachable': 'off',
-        'valid-typeof': 'off',
-        'no-const-assign': 'off',
-        'no-new-symbol': 'off',
-        'no-this-before-super': 'off',
-
-        // enable option `strictNullChecks`.
-        'no-undef': 'off',
-        'no-redeclare': 'off',
 
         '@typescript-eslint/restrict-plus-operands': 'error',
         '@typescript-eslint/no-base-to-string': 'error',

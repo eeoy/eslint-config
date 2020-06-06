@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@eeoy', './lib/typescript'],
+  extends: ['./lib/eslint-recommended', './lib/typescript'],
 };

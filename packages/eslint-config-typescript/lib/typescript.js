@@ -1,4 +1,5 @@
 const EXT = ['.js', '.jsx', '.ts', '.tsx'];
+
 module.exports = {
   settings: {
     'import/extensions': EXT,
@@ -209,6 +210,15 @@ module.exports = {
 
         'dot-notation': 'off',
         '@typescript-eslint/dot-notation': 'error',
+
+        'lines-between-class-members': 'off',
+        '@typescript-eslint/lines-between-class-members': [
+          'warn',
+          'always',
+          {
+            exceptAfterOverload: false,
+          },
+        ],
       },
     },
   ],

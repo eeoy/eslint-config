@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
-    "eslint-plugin-jest": "^23.13.0"
+    "eslint-plugin-jest": "^24.0.0"
   },
   "devDependencies": {
-    "eslint-plugin-jest": "^23.13.2"
+    "eslint-plugin-jest": "^24.0.1"
   },
   "publishConfig": {
     "access": "public"

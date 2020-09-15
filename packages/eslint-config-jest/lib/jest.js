@@ -34,7 +34,9 @@ module.exports = {
         ],
 
         'jest/no-standalone-expect': 'error',
-        'jest/no-test-callback': 'error',
+
+        'jest/no-done-callback': 'error',
+
         'jest/no-test-prefixes': 'error',
         'jest/no-test-return-statement': 'error',
         'jest/prefer-hooks-on-top': 'error',
@@ -51,6 +53,10 @@ module.exports = {
         'jest/valid-expect-in-promise': 'error',
         'jest/valid-expect': 'error',
         'jest/valid-title': 'error',
+
+        'jest/no-conditional-expect': 'error',
+        'jest/no-interpolation-in-snapshots': 'error',
+        'jest/no-deprecated-functions': 'error',
       },
     },
   ],

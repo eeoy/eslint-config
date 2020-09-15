@@ -201,6 +201,9 @@ module.exports = {
             exceptAfterOverload: false,
           },
         ],
+
+        '@typescript-eslint/ban-ts-comment': 'error',
+        '@typescript-eslint/no-confusing-non-null-assertion': 'error',
       },
     },
   ],

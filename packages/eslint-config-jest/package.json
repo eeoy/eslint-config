@@ -1,6 +1,6 @@
 {
   "name": "@eeoy/eslint-config-jest",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
@@ -11,5 +11,5 @@
   },
   "publishConfig": {
     "access": "public"
-  }  
+  }
 }

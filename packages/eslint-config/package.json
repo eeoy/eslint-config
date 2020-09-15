@@ -11,5 +11,8 @@
   "dependencies": {
     "confusing-browser-globals": "^1.0.9"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }

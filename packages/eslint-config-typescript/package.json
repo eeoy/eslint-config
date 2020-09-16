@@ -14,5 +14,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@eeoy/eslint-config": "^1.0.0"
   }
 }

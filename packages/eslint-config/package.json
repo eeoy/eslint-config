@@ -1,7 +1,7 @@
 {
   "name": "@eeoy/eslint-config",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "devDependencies": {
     "eslint-plugin-import": "^2.20.2"
   },

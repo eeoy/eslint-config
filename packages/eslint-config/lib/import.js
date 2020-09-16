@@ -66,7 +66,7 @@ module.exports = {
       },
     ],
     'import/newline-after-import': 'off',
-    'import/no-unassigned-import': 'error',
+    'import/no-unassigned-import': 'off',
     'import/no-named-default': 'error',
     'import/no-anonymous-default-export': [
       'error',

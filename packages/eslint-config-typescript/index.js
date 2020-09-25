@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    './lib/eslint-recommended',
-    './lib/typescript',
     require.resolve('@eeoy/eslint-config'),
+    require.resolve('@eeoy/eslint-config-typescript/lib/typescript'),
+    require.resolve('@eeoy/eslint-config-typescript/lib/eslint-recommended'),
   ],
 };

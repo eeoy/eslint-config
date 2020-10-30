@@ -95,7 +95,7 @@ module.exports = {
     'react/jsx-equals-spacing': 'off',
     'react/jsx-filename-extension': ['off', { extensions: ['.jsx', '.tsx'] }],
     'react/jsx-first-prop-new-line': 'off',
-    'react/jsx-fragments': ['error', 'syntax'],
+    'react/jsx-fragments': ['off', 'syntax'],
     'react/jsx-handler-names': [
       'error',
       {

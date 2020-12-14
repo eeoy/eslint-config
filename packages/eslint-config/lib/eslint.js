@@ -57,12 +57,15 @@ module.exports = {
     'require-yield': 'error',
     'use-isnan': 'error',
     'valid-typeof': 'error',
+
     // possible errors
     'no-await-in-loop': 'error',
     'no-cond-assign': ['error', 'always'],
     'no-console': 'warn',
     'no-import-assign': 'error',
     'no-template-curly-in-string': 'error',
+
+    'no-unsafe-optional-chaining': 'error',
 
     // best practice
     'array-callback-return': ['error', { allowImplicit: true }],

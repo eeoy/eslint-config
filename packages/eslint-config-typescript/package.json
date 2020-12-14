@@ -1,6 +1,6 @@
 {
   "name": "@eeoy/eslint-config-typescript",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
@@ -16,6 +16,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@eeoy/eslint-config": "^1.0.2"
+    "@eeoy/eslint-config": "^1.1.0"
   }
 }

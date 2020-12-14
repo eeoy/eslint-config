@@ -31,14 +31,7 @@ module.exports = {
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': 'off',
         '@typescript-eslint/await-thenable': 'error',
-        '@typescript-eslint/ban-types': [
-          'error',
-          {
-            types: {
-              Object: { message: 'Use {} instead', fixWith: '{}' },
-            },
-          },
-        ],
+        '@typescript-eslint/ban-types': ['error'],
 
         '@typescript-eslint/consistent-type-assertions': [
           'error',
@@ -204,6 +197,10 @@ module.exports = {
 
         '@typescript-eslint/ban-ts-comment': 'error',
         '@typescript-eslint/no-confusing-non-null-assertion': 'error',
+
+        '@typescript-eslint/consistent-indexed-object-style': 'warn',
+
+        '@typescript-eslint/no-unnecessary-type-constraint': 'error',
       },
     },
   ],

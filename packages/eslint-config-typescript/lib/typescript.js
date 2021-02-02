@@ -196,11 +196,34 @@ module.exports = {
         ],
 
         '@typescript-eslint/ban-ts-comment': 'error',
+
         '@typescript-eslint/no-confusing-non-null-assertion': 'error',
 
         '@typescript-eslint/consistent-indexed-object-style': 'warn',
 
         '@typescript-eslint/no-unnecessary-type-constraint': 'error',
+
+        '@typescript-eslint/sort-type-union-intersection-members': [
+          'warn',
+          {
+            checkIntersections: true,
+            checkUnions: true,
+            groupOrder: [
+              'named',
+              'keyword',
+              'operator',
+              'literal',
+              'function',
+              'import',
+              'conditional',
+              'object',
+              'tuple',
+              'intersection',
+              'union',
+              'nullish',
+            ],
+          },
+        ],
       },
     },
   ],

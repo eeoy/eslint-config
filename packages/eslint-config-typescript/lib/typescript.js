@@ -204,7 +204,7 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-constraint': 'error',
 
         '@typescript-eslint/sort-type-union-intersection-members': [
-          'warn',
+          'off',
           {
             checkIntersections: true,
             checkUnions: true,

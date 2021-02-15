@@ -1,7 +1,4 @@
 {
-  "files.exclude": {
-    "node_modules": true
-  },
   "javascript.format.enable": false,
   "typescript.format.enable": false,
   "json.format.enable": false

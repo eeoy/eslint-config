@@ -1,8 +1,6 @@
 module.exports = {
-  extends: ['@eeoy', '@eeoy/typescript'],
+  extends: ['@eeoy'],
   env: { node: true },
-  parserOptions: {
-    project: './tsconfig.eslint.json',
-  },
+  parserOptions: {},
   rules: {},
 };

@@ -1,7 +1,10 @@
 {
   "name": "@eeoy/eslint-config-jest",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "eslint-plugin-jest": "^24.0.0"

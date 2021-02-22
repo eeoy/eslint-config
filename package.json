@@ -1,9 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "format": "prettier --write '**/*{.js,.ts,.json}'",
-    "format-check": "prettier --list-different '**/*{.js,.ts,.json}'"
+    "format-check": "prettier --list-different '**/*{.js,.ts,.json}'",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "postinstall": "husky install"
   },
   "workspaces": {
     "packages": [
@@ -12,7 +13,9 @@
   },
   "devDependencies": {
     "eslint": "^7.2.0",
+    "husky": "^5.1.1",
     "lerna": "^3.22.0",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.0.5",
     "typescript": "^4.0.2"
   }

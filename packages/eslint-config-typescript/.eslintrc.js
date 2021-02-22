@@ -1,5 +1,5 @@
 module.exports = {
-  extends: './lib',
+  extends: ['.', require.resolve('@eeoy/eslint-config-react')],
   parserOptions: {
     project: ['./tsconfig.json'],
     tsconfigRootDir: __dirname,

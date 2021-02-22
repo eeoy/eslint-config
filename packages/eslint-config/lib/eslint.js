@@ -71,7 +71,7 @@ module.exports = {
     'array-callback-return': ['error', { allowImplicit: true }],
     'block-scoped-var': 'error',
     'class-methods-use-this': 'error',
-    'consistent-return': 'error',
+    'consistent-return': 'off',
     'default-case': 'error',
     'default-param-last': 'error',
     'dot-notation': 'error',

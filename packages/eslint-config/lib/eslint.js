@@ -160,7 +160,12 @@ module.exports = {
     'no-script-url': 'error',
     'no-self-compare': 'error',
     'no-throw-literal': 'error',
-    'no-unused-expressions': 'error',
+    'no-unused-expressions': [
+      'error',
+      {
+        enforceForJSX: true,
+      },
+    ],
     'no-useless-call': 'error',
     'no-useless-concat': 'error',
     'no-useless-return': 'error',

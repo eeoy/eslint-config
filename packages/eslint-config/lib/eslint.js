@@ -185,7 +185,8 @@ module.exports = {
     'no-path-concat': 'error',
 
     // style
-    camelcase: ['error', { properties: 'always', ignoreDestructuring: false }],
+    camelcase: ['warn', { properties: 'never', ignoreDestructuring: false }],
+
     'func-names': 'warn',
     'lines-between-class-members': 'error',
     'new-cap': ['error', { newIsCap: true, capIsNew: false }],

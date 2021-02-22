@@ -148,7 +148,10 @@ module.exports = {
         '@typescript-eslint/no-empty-function': 'warn',
 
         'no-unused-expressions': 'off',
-        '@typescript-eslint/no-unused-expressions': 'error',
+        '@typescript-eslint/no-unused-expressions': [
+          'error',
+          { enforceForJSX: true },
+        ],
 
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': [

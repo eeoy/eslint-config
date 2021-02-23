@@ -232,7 +232,7 @@ module.exports = {
         '@typescript-eslint/no-shadow': 'error',
 
         '@typescript-eslint/consistent-type-imports': [
-          'error',
+          'off',
           {
             prefer: 'type-imports',
           },

@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "cz": "git-cz",
     "format": "prettier --write '**/*{.js,.ts,.json}'",
     "format-check": "prettier --list-different '**/*{.js,.ts,.json}'",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",

@@ -1,5 +1,3 @@
-const EXT_GLOB = '{js,jsx,ts,tsx}';
-
 module.exports = {
   settings: {
     'import/extensions': ['.js', '.jsx'],
@@ -34,16 +32,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: [
-          'tests/**',
-          '**/__tests__/**',
-          '**/__mocks__/**',
-          `**/*.test.${EXT_GLOB}`,
-          `**/*.stories.${EXT_GLOB}`,
-          '**/.storybook/**',
-          '**/jest.config.js',
-          '**/webpack.config.js',
-        ],
+        devDependencies: true,
         optionalDependencies: false,
       },
     ],
@@ -52,11 +41,10 @@ module.exports = {
     'import/no-duplicates': 'error',
     'import/extensions': [
       'error',
-      'always',
+      'ignorePackages',
       {
         js: 'never',
         jsx: 'never',
-        json: 'ignorePackages',
       },
     ],
     'import/order': [

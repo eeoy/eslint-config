@@ -257,7 +257,7 @@ module.exports = {
     'no-restricted-globals': ['error'].concat(confusingBrowserGlobals),
     'no-shadow': 'error',
     'no-undef-init': 'error',
-    'no-undefined': 'error',
+    'no-undefined': 'off',
     'no-unused-vars': ['warn', { vars: 'all', args: 'after-used' }],
     'no-use-before-define': [
       'error',
